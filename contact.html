@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlit Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav class="logo">
+            <h1>The Moonlit Kitchen</h1>
+        </nav>
+
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </header>
+
+    <section class="contact">
+        <div> 
+            <h2> Let’s Connect</h2>
+            <p> 
+            📍 Location: (your city / area)
+            📞 Phone: +91 94855 84758
+            ✉️ Email: moonlitkitchen@email.com
+            ⏰ Hours: 7 PM – 12 AM</p>
+        </div>
+      <br>  
+
+        <section class="book-table">
+            <h2>Book a Table</h2>
+            <p>Reserve your spot and enjoy a cozy moonlit dining experience.</p>
+        
+            <form onsubmit="showAlert(); return false;">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="date" required>
+                <input type="time" required>
+                <input type="number" placeholder="Number of Guests" required>
+        
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+    </section>
+    <script>
+        function showAlert() {
+            alert("Thank you for booking! 🌙\nWe’ll contact you soon to confirm your table.");
+        }
+    </script>
+    </body>
+    </html>
